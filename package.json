@@ -1,0 +1,26 @@
+{
+  "name": "buildnoderestful",
+  "version": "1.0.0",
+  "description": "restfulNode",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.js --exec babel-node --presets env",
+    "build": "babel src -d dist --source-maps inline --copy-files",
+    "serve": "node dist/app.js"
+  },
+  "author": "ktpm489",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongooses": "^1.0.0",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "nodemon": "^1.17.3"
+  }
+}
